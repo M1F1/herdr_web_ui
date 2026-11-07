@@ -1,0 +1,13 @@
+{
+  "name": "herdr-web",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A phone-sized web app for herdr-core: watch and answer your agents from an iPhone.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "token": "node -e \"console.log(JSON.parse(require('fs').readFileSync(require('os').homedir()+'/.config/herdr-web/config.json','utf8')).token)\""
+  }
+}
